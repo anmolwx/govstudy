@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Govt Exam Study Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Govt Exam Study Tracker</h1>
+        <p>Plan your studies. Track your progress. Achieve your goals.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome Back!</h2>
+            <p>Stay consistent and prepare for your dream government job.</p>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Total Subjects</h3>
+                <p id="subjectCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Topics</h3>
+                <p id="topicCount">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Completed Topics</h3>
+                <p id="completedCount">0</p>
+            </div>
+
+        </section>
+
+        <section class="progress-section">
+            <h2>Overall Progress</h2>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <p id="progressText">0% Completed</p>
+        </section>
+
+<section class="daily-goal">
+
+    <h2>Daily Study Goal</h2>
+
+    <div class="goal-input">
+        <label for="dailyTarget">
+            Set Daily Target (Hours):
+        </label>
+
+        <input type="number"
+            id="dailyTarget"
+            min="1"
+            max="24"
+            value="4">
+
+        <button id="saveGoalBtn">
+            Save Goal
+        </button>
+    </div>
+
+    <div class="goal-input">
+        <label for="hoursStudied">
+            Hours Studied Today:
+        </label>
+
+        <input type="number"
+            id="hoursStudied"
+            min="0"
+            max="24"
+            step="0.5"
+            value="0">
+
+        <button id="saveHoursBtn">
+            Update Hours
+        </button>
+    </div>
+
+    <h3 id="goalText">0 / 4 Hours Completed</h3>
+
+    <div class="progress-bar">
+        <div id="dailyProgress" class="progress"></div>
+    </div>
+
+    <p id="goalPercentage">0% of Daily Goal Completed</p>
+
+</section>
+
+        <section class="subject-section">
+            <h2>My Subjects</h2>
+
+            <div class="add-subject">
+                <input type="text" id="subjectInput"
+                    placeholder="Enter subject name">
+                <button id="addSubjectBtn">Add Subject</button>
+            </div>
+
+            <div id="subjectList"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Govt Exam Study Tracker | Stay Focused, Stay Consistent.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
